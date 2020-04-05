@@ -1,0 +1,46 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:jest/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["emotion"],
+  "globals": {
+    "$": false,
+    "andThen": false,
+    "atob": false,
+    "Blob": false,
+    "click": false,
+    "currentURL": false,
+    "document": true,
+    "fillIn": false,
+    "find": false,
+    "Image": false,
+    "Modernizr": false,
+    "route": false,
+    "server": false,
+    "visit": false,
+    "window": false,
+  },
+  "rules": {
+    "@typescript-eslint/camelcase": 0,
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "camelcase": 0,
+    "react/destructuring-assignment": 1,
+    "react/jsx-props-no-spreading": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "react/static-property-placement": 0,
+    "react/state-in-constructor": 0,
+    "no-underscore-dangle": 1,
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+}
